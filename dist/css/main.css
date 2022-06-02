@@ -159,4 +159,69 @@ background: variables.$primary-color;
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  color: white;
+}
+body .hero {
+  background-image: url(/src/img/tesla-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+body .hero .title {
+  font-size: 4rem;
+  font-size: 3rem;
+  line-height: 1;
+  color: black;
+}
+body img {
+  max-width: 100%;
+  display: block;
+}
+body .container {
+  width: 85%;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+body .container h1,
+body .container p,
+body .container a {
+  margin-top: 2rem;
+}
+body .container .sub-heading {
+  color: black;
+}
+body .container .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+body .container .product {
+  padding: 3rem 0;
+}
+body .btn {
+  display: inline-block;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+}
+body .btn:hover,
+body .btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.9;
+}
 /*# sourceMappingURL=main.css.map */

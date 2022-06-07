@@ -41,7 +41,7 @@ body{
 	color: white;
 
 	.hero{
-		background-image: url(/src/img/tesla-background.jpeg);
+		background-image: url(../img/tesla-background.jpeg);
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		background-position: center 55%;
@@ -111,35 +111,35 @@ body{
 			}
 
 			.ultra-hard{
-				position: absolute;
-				top: -10rem;
-				right: 26rem;
+				// position: absolute;
+				// top: -10rem;
+				// right: 26rem;
 
 				@include mixins.bp-large{
-					top: -25rem;
-					right: 100rem;
+					// top: -25rem;
+					// right: 100rem;
 				}
 			}
 			
 			.armor-glass{
-				position: absolute;
-				top: -10rem;
-				right: 25rem;
+				// position: absolute;
+				// top: -10rem;
+				// right: 25rem;
 
 				@include mixins.bp-large{
-					top: -25rem;
-					right: 100rem;
+					// top: -25rem;
+					// right: 100rem;
 				}
 			}
 
 			.versatility{
-				position: absolute;
-				top: -10rem;
-				right: 25rem;
+				// position: absolute;
+				// top: -10rem;
+				// right: 25rem;
 
 				@include mixins.bp-large{
-					top: -25rem;
-					right: 100rem;
+					// top: -25rem;
+					// right: 100rem;
 				}
 			}
 		}

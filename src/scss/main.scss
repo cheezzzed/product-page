@@ -24,6 +24,8 @@ background: variables.$primary-color;
 */
 
 @use 'reset';
+@use 'variables';
+@use 'mixins';
 
 /* 1. Main Layout ================================= */
 
@@ -41,7 +43,8 @@ body{
 	.hero{
 		background-image: url(/src/img/tesla-background.jpeg);
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 100% auto;
+		background-position: center 55%;
 		background-attachment: fixed;
 		text-align: center;
 
@@ -54,8 +57,8 @@ body{
 	}
 
 	img{
-		max-width: 100%;
-		display: block;
+		width: 100%;
+		// display: block;
 	}
 
 	.container{
@@ -67,6 +70,14 @@ body{
 		p,
 		a{
 			margin-top: 2rem;
+		}
+
+		.order{
+			margin-bottom: 10rem;
+		}
+
+		h2{
+			padding: 2rem 0;
 		}
 
 		.sub-heading{
@@ -81,6 +92,56 @@ body{
 
 		.product{
 			padding: 3rem 0;
+			position: relative;
+			// margin-top: 10rem;
+
+			@include mixins.bp-large{
+				// margin-top: 20rem;
+			}
+
+			.exoskeleton{
+				// position: absolute;
+				// top: -10rem;
+				// right: 25rem;
+
+				@include mixins.bp-large{
+					// top: -25rem;
+					// right: 100rem;
+				}
+			}
+
+			.ultra-hard{
+				position: absolute;
+				top: -10rem;
+				right: 26rem;
+
+				@include mixins.bp-large{
+					top: -25rem;
+					right: 100rem;
+				}
+			}
+			
+			.armor-glass{
+				position: absolute;
+				top: -10rem;
+				right: 25rem;
+
+				@include mixins.bp-large{
+					top: -25rem;
+					right: 100rem;
+				}
+			}
+
+			.versatility{
+				position: absolute;
+				top: -10rem;
+				right: 25rem;
+
+				@include mixins.bp-large{
+					top: -25rem;
+					right: 100rem;
+				}
+			}
 		}
 	}
 
@@ -91,6 +152,7 @@ body{
 		color: black;
 		border-radius: .5rem;
 		padding: 0.5rem 1.25rem;
+		margin-bottom: 1rem;
 		font-weight: 600;
 		font-size: 1.125rem;
 		transition: transform 250ms ease-in-out,

@@ -133,6 +133,8 @@ table {
   border-spacing: 0;
 }
 
+/* 0. Breakpoints ==================================== */
+/* 1. Colors ========================================= */
 /* 
 ==============================================
 CONTENT:	Project Name Here
@@ -170,7 +172,8 @@ body {
 body .hero {
   background-image: url(/src/img/tesla-background.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
+  background-position: center 55%;
   background-attachment: fixed;
   text-align: center;
 }
@@ -181,8 +184,7 @@ body .hero .title {
   color: black;
 }
 body img {
-  max-width: 100%;
-  display: block;
+  width: 100%;
 }
 body .container {
   width: 85%;
@@ -194,6 +196,12 @@ body .container p,
 body .container a {
   margin-top: 2rem;
 }
+body .container .order {
+  margin-bottom: 10rem;
+}
+body .container h2 {
+  padding: 2rem 0;
+}
 body .container .sub-heading {
   color: black;
 }
@@ -204,6 +212,40 @@ body .container .section-title {
 }
 body .container .product {
   padding: 3rem 0;
+  position: relative;
+}
+body .container .product .ultra-hard {
+  position: absolute;
+  top: -10rem;
+  right: 26rem;
+}
+@media screen and (min-width: 992px) {
+  body .container .product .ultra-hard {
+    top: -25rem;
+    right: 100rem;
+  }
+}
+body .container .product .armor-glass {
+  position: absolute;
+  top: -10rem;
+  right: 25rem;
+}
+@media screen and (min-width: 992px) {
+  body .container .product .armor-glass {
+    top: -25rem;
+    right: 100rem;
+  }
+}
+body .container .product .versatility {
+  position: absolute;
+  top: -10rem;
+  right: 25rem;
+}
+@media screen and (min-width: 992px) {
+  body .container .product .versatility {
+    top: -25rem;
+    right: 100rem;
+  }
 }
 body .btn {
   display: inline-block;
@@ -212,6 +254,7 @@ body .btn {
   color: black;
   border-radius: 0.5rem;
   padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
   font-weight: 600;
   font-size: 1.125rem;
   transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
